@@ -206,6 +206,37 @@ section {
 .light-section p {
   color: #d0d6e0;
 }
+/* =========================
+   MOBILE FIXES ONLY
+   ========================= */
+@media (max-width: 600px) {
+
+  /* 1️⃣ Logo ko top pe lao & compact hero */
+  .hero {
+    padding-top: 20px;
+    padding-bottom: 35px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  /* 2️⃣ Button aur Services ke beech gap kam */
+  .hero .btn {
+    margin-bottom: 20px;
+  }
+
+  section {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+}
+
 
 
 

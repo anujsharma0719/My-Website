@@ -99,6 +99,13 @@ section {
   text-align: center;
 }
 
+/* CTA buttons spacing */
+.cta .btn {
+  display: block;
+  margin: 12px auto;   /* 🔥 yahin se gap aayega */
+}
+
+
 /* MOBILE */
 @media (max-width: 600px) {
   .hero h1 {
@@ -181,3 +188,4 @@ section {
   background: #25d366;
   color: #fff;
 }
+

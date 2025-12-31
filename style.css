@@ -1,9 +1,11 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* BODY */
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #eaeaea;
@@ -15,13 +17,15 @@ body {
   );
 }
 
+/* CONTAINER */
 .container {
   width: 90%;
   max-width: 1100px;
   margin: auto;
+  text-align: center;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 .hero {
   min-height: 85vh;
   display: flex;
@@ -34,35 +38,49 @@ body {
   );
 }
 
+/* LOGO */
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.logo img {
+  width: 160px;
+  max-width: 85%;
+  height: auto;
+}
+
+/* TAGLINE */
+.tagline {
+  text-align: center;
+  color: #9aa3b8;
+  font-size: 15px;
+  margin-bottom: 14px;
+  letter-spacing: 0.4px;
+}
+
+/* HERO TEXT */
 .hero h1 {
   font-size: 2rem;
   margin-bottom: 10px;
+  color: #ffffff;
 }
 
 .hero p {
+  color: #b8c0d9;
   margin-bottom: 20px;
-  color: #555;
 }
 
-/* BUTTONS */
-.btn {
-  background: #25D366;
-  color: #fff;
-  padding: 12px 22px;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  margin-right: 10px;
-}
-
+/* ================= BUTTON ================= */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
   padding: 14px 28px;
-  min-width: 200px;        /* 🔥 important */
-  white-space: nowrap;    /* 🔥 text wrap band */
+  min-width: 200px;
+  white-space: nowrap;
 
   background: linear-gradient(135deg, #25d366, #1faa59);
   color: #ffffff;
@@ -76,15 +94,30 @@ body {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* SECTIONS */
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 35px rgba(37, 211, 102, 0.45);
+}
+
+/* OUTLINE BUTTON */
+.btn.outline {
+  background: transparent;
+  border: 2px solid #25d366;
+  color: #25d366;
+  box-shadow: none;
+}
+
+.btn.outline:hover {
+  background: #25d366;
+  color: #ffffff;
+}
+
+/* ================= SECTIONS ================= */
 section {
   padding: 60px 0;
 }
 
-.light {
-  background: #f7f7f7;
-}
-
+/* SERVICES LIST */
 .services {
   list-style: none;
   margin-top: 20px;
@@ -94,57 +127,27 @@ section {
   margin-bottom: 10px;
 }
 
-/* CTA */
+/* ================= CTA ================= */
 .cta {
   text-align: center;
 }
 
-/* CTA buttons spacing */
 .cta .btn {
   display: block;
-  margin: 12px auto;   /* 🔥 yahin se gap aayega */
+  margin: 12px auto;
 }
 
-
-/* MOBILE */
-@media (max-width: 600px) {
-  .hero h1 {
-    font-size: 1.5rem;
-  }
-}
-.center {
-  text-align: center;
-}
-
-/* LOGO */
-.logo {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 25px;
-}
-/* HERO TEXT COLORS */
-.hero h1 {
+/* ================= LIGHT SECTION (TRANSPARENT) ================= */
+.light-section {
+  background: transparent;
   color: #ffffff;
 }
 
-.hero p {
-  color: #b8c0d9;
-}
-/* LIGHT SECTION (Featured Work) */
-.light-section {
-  background: #ffffff;
-  color: #111;
-}
-
-.light-section h2 {
-  color: #111;
-}
-
 .light-section p {
-  color: #333;
+  color: #d0d6e0;
 }
 
-/* ABOUT CTA */
+/* ================= ABOUT CTA ================= */
 .about-cta {
   padding: 80px 0;
   text-align: center;
@@ -168,47 +171,28 @@ section {
   padding-bottom: 60px;
 }
 
-/* OUTLINE BUTTON */
-.btn.outline {
-  background: transparent;
-  border: 2px solid #25d366;
-  color: #25d366;
-  box-shadow: none;
-}
-
-.btn.outline:hover {
-  background: #25d366;
-  color: #fff;
-}
-/* REMOVE WHITE SECTION */
-.light-section {
-  background: transparent;
-  color: #ffffff;
-}
-
-.light-section p {
-  color: #d0d6e0;
-}
-/* =========================
-   MOBILE FIXES ONLY
-   ========================= */
+/* ================= MOBILE ONLY ================= */
 @media (max-width: 600px) {
 
-  /* 1️⃣ Logo ko top pe lao & compact hero */
   .hero {
     padding-top: 20px;
     padding-bottom: 35px;
-  }
-
-  .logo {
-    margin-bottom: 10px;
+    min-height: auto;
   }
 
   .logo img {
     width: 150px;
   }
 
-  /* 2️⃣ Button aur Services ke beech gap kam */
+  .tagline {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
   .hero .btn {
     margin-bottom: 20px;
   }
@@ -217,10 +201,4 @@ section {
     padding-top: 35px;
     padding-bottom: 35px;
   }
-
 }
-
-
-
-
-

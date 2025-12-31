@@ -122,23 +122,6 @@ section {
   justify-content: center;
   margin-bottom: 25px;
 }
-
-.logo img {
-  width: 150px;        /* 🔥 bigger logo */
-  max-width: 80%;
-  height: auto;
-}
-
-
-/* MOBILE me thoda chhota */
-@media (max-width: 600px) {
-  .logo img {
-    width: 170px;      
-  }
-}
-
-  }
-}
 /* HERO TEXT COLORS */
 .hero h1 {
   color: #ffffff;
@@ -236,6 +219,7 @@ section {
   }
 
 }
+
 
 
 

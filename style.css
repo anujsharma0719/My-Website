@@ -197,5 +197,15 @@ section {
   background: #25d366;
   color: #fff;
 }
+/* REMOVE WHITE SECTION */
+.light-section {
+  background: transparent;
+  color: #ffffff;
+}
+
+.light-section p {
+  color: #d0d6e0;
+}
+
 
 

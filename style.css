@@ -117,17 +117,26 @@ section {
 }
 
 /* LOGO */
-.logo img {
-  width: 130px;
+.logo {
+  display: flex;
+  justify-content: center;
   margin-bottom: 25px;
-  filter: drop-shadow(0 0 25px rgba(255, 165, 0, 0.35))
-          drop-shadow(0 0 45px rgba(80, 120, 255, 0.25));
 }
+
+.logo img {
+  width: 150px;        /* 🔥 bigger logo */
+  max-width: 80%;
+  height: auto;
+}
+
 
 /* MOBILE me thoda chhota */
 @media (max-width: 600px) {
   .logo img {
-    width: 90px;
+    width: 170px;      
+  }
+}
+
   }
 }
 /* HERO TEXT COLORS */
@@ -188,4 +197,5 @@ section {
   background: #25d366;
   color: #fff;
 }
+
 
